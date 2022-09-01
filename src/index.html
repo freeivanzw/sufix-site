@@ -16,6 +16,9 @@
     <style>
         :root {
             --site-bg-color: #FFFFFF;
+            --header-bg-color: #F5F7FA;
+            --footer-bg: #EBEDF0;
+            --mob-menu-bg: #2C2A39;
             --main-color: #D90A2C;
             --sub-main-color: #EBEDF0;
             --footer-color: #EBEDF0;
@@ -37,31 +40,15 @@
     </style>
 </head>
 <body>
+    <!--ХЕДЕР-->
     <header class="site_header">
-        <a href="#" class="header_logo"><img src="./images/header-logo.png" alt="header logo"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Назва компанії</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Продукція</a></li>
-                <li><a href="#">Портфоліо</a></li>
-                <li><a href="#">Ціни</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul class="header_phones">
-            <li><a href="tel:380985811614">380985811614</a></li>
-            <li><a href="tel:380985811614">380985811614</a></li>
-        </ul>
-        <a href="#" class="mob_menu-open">open mob menu</a>
-        <div class="mob_menu">
-            <a href="#" class="mob_menu-close">close mob menu</a>
-            <a href="#" class="mob_menu-logo"><img src="./images/header-logo.png" alt="header logo"></a>
-            <nav>
+        <div class="centre">
+            <a href="#" class="header_logo"><img src="./images/logo.png" width="90" height="45" alt="header logo"></a>
+            <nav class="top_menu">
                 <ul>
                     <li><a href="#">Назва компанії</a></li>
                     <li><a href="#">Послуги</a></li>
-                    <li>
+                    <li class="has_drop">
                         <a href="#">Продукція</a>
                         <ul>
                             <li><a href="#">Назва компанії</a></li>
@@ -77,23 +64,123 @@
                     <li><a href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="mob_menu-phone">
-                <li><a href="tel:380985811614">380985811614</a></li>
-                <li><a href="tel:380985811614">380985811614</a></li>
+            <ul class="header_phones">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+
             </ul>
-            <ul class="mob_menu-social">
-                <li><a href="#"></a></li>
-            </ul>
+            <a href="#" class="mob_menu-open"><i></i>open mob menu</a>
+            <div class="mob_menu">
+                <a href="#" class="mob_menu-close close_btn">close mob menu</a>
+                <a href="#" class="mob_menu-logo"><img src="./images/logo.png"  width="90" height="45"  alt="header logo"></a>
+                <nav class="mob_top-menu">
+                    <ul>
+                        <li><a href="#">Назва компанії</a></li>
+                        <li><a href="#">Послуги</a></li>
+                        <li>
+                            <a href="#">Продукція</a>
+                            <ul>
+                                <li><a href="#">Назва компанії</a></li>
+                                <li><a href="#">Послуги</a></li>
+                                <li><a href="#">Продукція</a></li>
+                                <li><a href="#">Портфоліо</a></li>
+                                <li><a href="#">Ціни</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="mob_menu-phone">
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                </ul>
+                <ul class="mob_menu-social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
-
+        <!--БАННЕР-->
+        <section class="main_banner" style="background-image: url(./images/mainbanner.png);">
+            <div class="centre">
+                <span class="main_title">Назва компанії</span>
+                <span class="activity">Назва галузі діяльності до п’ятдесяти символів</span>
+                <span class="main_banner-text">Тут короткий опис переваг над іншими. Невеличкий абзац до 300 символів. Сиве волосся до чогось зобов'язує. Старечі ноги йдуть уже просто до могили. Багате досвідом життя лежить переді мною, як рельєфна мапа моєї Республіки. Скільки-то води втекло з того дня, коли я, молодий, зелений юнак, окунувся</span>
+            </div>
+        </section>
     </main>
+    <!--ФУТЕР-->
     <footer class="site_footer">
-
+        <div class="centre">
+            <div class="col-1">
+                <a href="#" class="footer_logo"><img src="./images/logo.png"  width="90" height="45" alt="footer_logo"></a>
+                <ul class="footer-phone">
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <nav class="bottom_menu">
+                    <ul>
+                        <li><a href="#">Про компанію</a></li>
+                        <li><a href="#">Поширені запитання</a></li>
+                        <li><a href="#">Коротка історія</a></li>
+                        <li><a href="#">Відгуки і рекомендації</a></li>
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Нагороди</a></li>
+                        <li><a href="#">Продукція</a></li>
+                        <li><a href="#">Вакансії</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Новини</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </nav>
+                <div class="work_info">
+                    <div class="info_item">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                        <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                    </div>
+                    <div class="info_item">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+                        <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                    </div>
+                    <a href="#" class="show_map">Показати на мапі</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <ul class="footer-phone">
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                    <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                </ul>
+                <ul class="footer-social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+                </ul>
+                <a href="#" class="privacy">Політика конфіденційності</a>
+                <div class="copy">Створення сайту: <a href="https://websufix.com">SUFIX веб студія</a></div>
+            </div>
+        </div>
     </footer>
 
-    <div class="styleguide">
+    <div class="styleguide" >
         <a href="#" class="btn">test test</a>
 
         <a href="#" class="btn btn_reverse">test test</a>

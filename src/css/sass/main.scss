@@ -1,4 +1,6 @@
-@import "./reset.scss";
+@import "reset";
 @import "./plugins/slick.scss";
-@import "./components/header.scss";
-@import "./base.scss";
+@import "./_base";
+@import "./components/_header";
+@import "./components/_footer.scss";
+@import "./components/_main-banner.scss";
