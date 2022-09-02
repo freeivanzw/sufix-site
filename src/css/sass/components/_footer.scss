@@ -16,7 +16,8 @@
 
 .footer_logo {
     display: block;
-    width: 90px;
+    width: 100%;
+    max-width: 120px;
     height: auto;
     position: absolute;
     top: 0;
@@ -96,6 +97,10 @@
     margin-right: 15px;
 }
 
+.show_map {
+    font-size: 12px;
+}
+
 .show_map:hover {
     text-decoration: none;
 }
@@ -127,6 +132,7 @@
 }
 .site_footer .centre > .col-3 .copy {
     color: var(--text-light);
+    font-size: 14px;
 }
 
 .site_footer .centre > .col-3 .copy A {

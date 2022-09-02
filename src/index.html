@@ -35,7 +35,7 @@
             --link-color: #D90A2C;
             --link-color-active: #2C2A39;
 
-            --section-bottom: 48px;
+            --grid-menu-bg: #EBEDF0;
         }
     </style>
 </head>
@@ -106,13 +106,87 @@
     </header>
     <main>
         <!--БАННЕР-->
-        <section class="main_banner" style="background-image: url(./images/mainbanner.png);">
+        <section class="main_banner">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/mainbanner-mob.png">
+              <source media="(min-width: 768px)" srcset="./images/mainbanner.png">
+              <img src="./images/mainbanner.png" alt="image">
+            </picture>
             <div class="centre">
                 <span class="main_title">Назва компанії</span>
                 <span class="activity">Назва галузі діяльності до п’ятдесяти символів</span>
                 <span class="main_banner-text">Тут короткий опис переваг над іншими. Невеличкий абзац до 300 символів. Сиве волосся до чогось зобов'язує. Старечі ноги йдуть уже просто до могили. Багате досвідом життя лежить переді мною, як рельєфна мапа моєї Республіки. Скільки-то води втекло з того дня, коли я, молодий, зелений юнак, окунувся</span>
             </div>
         </section>
+        <!--ІНФО В РЯД-->
+        <section class="info_row">
+            <div class="centre">
+                <div class="info_one">
+                    <div class="col-1">
+                        <div class="sub_title">Послуги</div>
+                    </div>
+                    <div class="col-2">
+                        <span class="info_text">Короткий опис послуг теж до 300 символів. Зараз мені — за сімдесят, мене термосить іноді ломота, руки дрижать, і на очі набігає сльоза. Тоді  я наказую розтопити кану, кладу на підставку ноги і стежу вогники над деревом. Це такий архаїзм тепер — топити дровами, але не нарікайте  на мене — я згадую сво</span>
+                    </div>
+                </div>
+                <div class="info_one">
+                    <div class="col-1">
+                        <div class="sub_title">Продукція</div>
+                    </div>
+                    <div class="col-2">
+                        <span class="info_text">Короткий опис продукції. Дивлюся, як перебігає прекрасний вогник, символ вічного переходу енергії й розкладу матерії, простягаю до нього руки, і він гріє мої долоні, на яких лінія життя доходить уже до краю. Старість до чогось зобов'язує. Сьогодні я бачив нашу надзвичайну  «Білу Пустелю».</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ВІДЕО-->
+        <section class="video">
+            <div class="centre">
+                <span class="sub_title">Відео-перезентація нашої компанії</span>
+                <div class="video_box">
+                    <div class="video_preload">
+                        <img src="./images/video-preload.png" alt="video preload">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#video"></use></svg>
+                    </div>
+                    <iframe style="display:none;" src="https://www.youtube.com/embed/pfWMx3V0TQI?list=RDGMEMJQXQAmqrnmK1SEjY_rKBGAVMpfWMx3V0TQI" title="Disturbed - Stricken (HQ Sound)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!--ІНФО В РЯД-->
+        <section class="info_row">
+            <div class="centre">
+                <div class="info_one">
+                    <div class="col-1">
+                        <div class="sub_title">Географія  діяльності</div>
+                    </div>
+                    <div class="col-2">
+                        <span class="info_text">Опис країн та міст з якими працює компанія. Молодий кінорежисер із повагою потиснув мені руку й захоплено подивився в вічі. “Він не може висловити всієї радості з того факту, що бачить мене. Він радий, що бачить мене здоровим, і запрошує до себе в ательє. Він за моїми книжками вивчав кінематографію.</span>
+                    </div>
+                </div>
+                <div class="info_one">
+                    <div class="col-1">
+                        <div class="sub_title">Наші клієнти</div>
+                    </div>
+                    <div class="col-2">
+                        <span class="info_text">Опис або перелік клієнтів з якими працює компанія. Тепер я знову мав щастя побачити на екрані новий крок наперед. Кіномистецтво дійшло апогею. Якими смішними здались мені витвори його на зорі існування. Ми, пригадую, ніяк не могли погодити між собою питання: Мистецтво кіно чи ні.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--МЕНЮ СІТКОЮ-->
+        <section class="grid_menu">
+            <ul class="centre">
+                <li><a href="#"><img src="./images/grid-menu-1.png"><span>Новини</span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-2.png"><span>Поширені запитання</span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-3.png"><span>Відгуки і рекомендації </span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-4.png"><span>Нагороди</span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-5.png"><span>Коротка історія</span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-6.png"><span>Вакансії</span></a></li>
+                <li><a href="#"><img src="./images/grid-menu-7.png"><span>Блог</span></a></li>
+            </ul>
+        </section>
+
+        <a href="#" class="to_up">up</a>
     </main>
     <!--ФУТЕР-->
     <footer class="site_footer">

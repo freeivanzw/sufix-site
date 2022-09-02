@@ -1,0 +1,41 @@
+/*МЕНЮ СІТКОЮ*/
+.grid_menu {
+    padding-bottom: var(--section-bottom);
+}
+.grid_menu .centre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid_menu Li {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_menu A {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-colo);
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--grid-menu-bg);
+    min-height: 80px;
+    padding: 12px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.grid_menu A Img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

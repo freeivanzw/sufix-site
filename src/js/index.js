@@ -33,4 +33,22 @@ $(function () {
        }
     })
 
+
+    if($('.main_banner').index() == 0) {
+        $('.site_header').addClass('header_transparent')
+    }
+
+    let $windowHeight = $(window).innerHeight();
+    $(window).on('scroll', function () {
+        if($(window).scrollTop() > $windowHeight) {
+            $('.to_up').addClass('show_up')
+        } else {
+            $('.to_up').removeClass('show_up')
+        }
+    })
+
+    $('.to_up').on('click', function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    })
 })

@@ -1,0 +1,14 @@
+/*ІНФО В РЯД*/
+
+.info_row {
+    padding-bottom: var(--section-bottom);
+}
+
+.info_one {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_one + .info_one {
+    margin-top: 80px;
+}

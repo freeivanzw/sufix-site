@@ -2,10 +2,29 @@
 @media only screen and (min-width: 480px) {
   /* ХЕДЕР */
   /* ФУТЕР */
+  /* БАННЕР */
+  /*ІНФО В РЯД*/
+  /*ВІДЕО*/
+  /*МЕНЮ СІТКОЮ*/
+  .grid_menu .centre {
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  }
 }
 @media only screen and (min-width: 640px) {
   /* ХЕДЕР */
   /* ФУТЕР */
+  /* БАННЕР */
+  /*ІНФО В РЯД*/
+  /*ВІДЕО*/
+  .video_preload {
+    height: 500px;
+  }
+
+  .video_box iframe {
+    height: 500px;
+  }
+
+  /*МЕНЮ СІТКОЮ*/
 }
 @media only screen and (min-width: 768px) {
   /* ХЕДЕР */
@@ -42,6 +61,10 @@
     color: var(--text-color);
   }
 
+  .site_header.header_transparent .top_menu > Ul > Li > A {
+    color: var(--text-contrast);
+  }
+
   .top_menu Li.has_drop A {
     padding-right: 15px;
     position: relative;
@@ -62,6 +85,10 @@
 
   .top_menu Li.has_drop:hover > A::after {
     transform: translateY(-50%) rotate(135deg);
+  }
+
+  .site_header.header_transparent .top_menu Li.has_drop > A::after {
+    border-color: var(--text-contrast);
   }
 
   .top_menu Li.has_drop UL {
@@ -122,6 +149,10 @@
     opacity: 0.7;
   }
 
+  .site_header.header_transparent .header_phones A {
+    color: var(--text-contrast);
+  }
+
   .header_phones A .icon {
     width: 16px;
     height: 16px;
@@ -145,18 +176,137 @@
     flex: 0 1 20%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px 0 0;
+  }
+
+  .site_footer .centre > .col-1 .footer-phone {
+    display: none;
+  }
+
+  .site_footer .centre > .col-1 .footer-social {
+    display: none;
+  }
+
+  .footer_logo {
+    position: relative;
+    max-width: 150px;
+    top: auto;
+    left: auto;
   }
 
   .site_footer .centre > .col-2 {
     flex: 0 1 60%;
     display: flex;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .bottom_menu {
+    flex: 0 1 50%;
+  }
+
+  .work_info {
+    flex: 0 1 50%;
+    padding-left: 10px;
+  }
+
+  .show_map {
+    margin-left: 30px;
+  }
+
+  .bottom_menu Ul {
+    margin-bottom: 0;
+    grid-template-columns: 1fr;
   }
 
   .site_footer .centre > .col-3 {
     flex: 0 1 20%;
+    align-items: flex-end;
+  }
+
+  .site_footer .centre > .col-3 .footer-phone {
+    display: block;
+  }
+
+  .site_footer .centre > .col-3 .footer-social {
+    display: flex;
+  }
+
+  .site_footer .centre > .col-3 .privacy {
+    text-align: end;
+    margin-bottom: 5px;
+  }
+
+  .site_footer .centre > .col-3 .copy {
+    text-align: end;
+    font-size: 13px;
+  }
+
+  /* БАННЕР */
+  /*ІНФО В РЯД*/
+  .info_one {
+    flex-direction: row;
+  }
+
+  .info_one > .col-1 {
+    flex: 0 0 400px;
+  }
+
+  .info_one > .col-2 {
+    flex: 1 1 auto;
+  }
+
+  /*ВІДЕО*/
+  /*МЕНЮ СІТКОЮ*/
+  .grid_menu .centre {
+    grid-gap: 30px;
+  }
+
+  .grid_menu A {
+    font-size: 20px;
+    min-height: 150px;
+    padding: 30px;
+  }
+
+  .grid_menu A Img {
+    width: 80px;
+    height: 80px;
   }
 }
 @media only screen and (min-width: 1024px) {
+  :root {
+    --section-bottom: 120px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .main_title,
+h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+
+  .sub_title,
+h2 {
+    font-size: 52px;
+    margin-bottom: 45px;
+  }
+
+  .item_title,
+h3 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .box_title,
+h4, h5 {
+    font-size: 24px;
+  }
+
   .input-wrap:hover::after {
     opacity: 1;
     visibility: visible;
@@ -164,8 +314,67 @@
 
   /* ХЕДЕР */
   /* ФУТЕР */
+  .bottom_menu Ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bottom_menu {
+    flex: 0 1 60%;
+  }
+
+  .work_info {
+    flex: 0 1 40%;
+    padding-left: 10px;
+  }
+
+  .footer-phone A {
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+  .footer-phone A:hover {
+    opacity: 0.7;
+  }
+
+  .footer-social a {
+    transition: 0.3s;
+  }
+
+  .footer-social a:hover {
+    opacity: 0.7;
+  }
+
+  .footer-social {
+    margin-bottom: auto;
+  }
+
+  /* БАННЕР */
+  .main_banner {
+    margin-bottom: 120px;
+  }
+
+  .main_banner .centre {
+    padding-top: 250px;
+    padding-bottom: 358px;
+  }
+
+  .activity {
+    font-size: 24px;
+  }
+
+  /*ІНФО В РЯД*/
+  .info_one + .info_one {
+    margin-top: 120px;
+  }
+
+  /*ВІДЕО*/
+  /*МЕНЮ СІТКОЮ*/
 }
 @media only screen and (min-width: 1280px) {
   /* ХЕДЕР */
   /* ФУТЕР */
+  /* БАННЕР */
+  /*ІНФО В РЯД*/
+  /*ВІДЕО*/
+  /*МЕНЮ СІТКОЮ*/
 }

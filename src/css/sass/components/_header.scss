@@ -4,6 +4,15 @@
     background-color: var(--header-bg-color);
 }
 
+.site_header.header_transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
 .site_header .centre {
     display: flex;
     align-items: center;
@@ -61,11 +70,20 @@
     bottom: 5px;
 }
 
+.site_header.header_transparent .mob_menu-open::before,
+.site_header.header_transparent .mob_menu-open::after {
+    background-color: var(--text-contrast);
+}
+
 .mob_menu-open i {
     display: block;
     width: 20px;
     height: 2px;
     background-color: var(--main-color);
+}
+
+.site_header.header_transparent .mob_menu-open i {
+    background-color: var(--text-contrast);
 }
 
 .mob_menu {
