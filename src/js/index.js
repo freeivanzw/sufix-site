@@ -51,4 +51,12 @@ $(function () {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 600);
     })
+
+    $('.slider_block').slick({
+        infinite: true,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        dots: true,
+    });
 })

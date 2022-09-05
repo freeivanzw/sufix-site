@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+
+    <style>
+        :root {
+            --site-bg-color: #FFFFFF;
+            --header-bg-color: #F5F7FA;
+            --footer-bg: #EBEDF0;
+            --mob-menu-bg: #2C2A39;
+            --main-color: #D90A2C;
+            --sub-main-color: #EBEDF0;
+            --footer-color: #EBEDF0;
+            --btn-bg: #D90A2C;
+            --btn-text: #FFFFFF;
+            --btn-bg-reverse: #F5F7FA;
+            --btn-text-reverse: #D90A2C;
+            --text-color: #2C2A39;
+            --text-light: #868F9E;
+            --text-contrast: #ffffff;
+            --border-color: #CCCDCE;
+            --icon-color: #D90A2C;
+            --icon-color-active: #2C2A39;
+            --link-color: #D90A2C;
+            --link-color-active: #2C2A39;
+
+            --grid-menu-bg: #EBEDF0;
+        }
+
+    </style>
+</head>
+<body>
+<!--ХЕДЕР-->
+<header class="site_header">
+    <div class="centre">
+        <a href="#" class="header_logo"><img src="./images/logo.png" width="90" height="45" alt="header logo"></a>
+        <nav class="top_menu">
+            <ul>
+                <li><a href="#">Назва компанії</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li class="has_drop">
+                    <a href="#">Продукція</a>
+                    <ul>
+                        <li><a href="#">Назва компанії</a></li>
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Продукція</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Ціни</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="header_phones">
+            <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+
+        </ul>
+        <a href="#" class="mob_menu-open"><i></i>open mob menu</a>
+        <div class="mob_menu">
+            <a href="#" class="mob_menu-close close_btn">close mob menu</a>
+            <a href="#" class="mob_menu-logo"><img src="./images/logo.png"  width="90" height="45"  alt="header logo"></a>
+            <nav class="mob_top-menu">
+                <ul>
+                    <li><a href="#">Назва компанії</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li>
+                        <a href="#">Продукція</a>
+                        <ul>
+                            <li><a href="#">Назва компанії</a></li>
+                            <li><a href="#">Послуги</a></li>
+                            <li><a href="#">Продукція</a></li>
+                            <li><a href="#">Портфоліо</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Портфоліо</a></li>
+                    <li><a href="#">Ціни</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="mob_menu-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="mob_menu-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <!--БАННЕР-->
+    <section class="main_banner">
+        <picture>
+            <source media="(max-width: 767px)" srcset="./images/mainbanner-mob.png">
+            <source media="(min-width: 768px)" srcset="./images/mainbanner.png">
+            <img src="./images/mainbanner.png" alt="image">
+        </picture>
+        <div class="centre">
+            <span class="main_title">Назва компанії</span>
+            <span class="activity">Назва галузі діяльності до п’ятдесяти символів</span>
+            <span class="main_banner-text">Тут короткий опис переваг над іншими. Невеличкий абзац до 300 символів. Сиве волосся до чогось зобов'язує. Старечі ноги йдуть уже просто до могили. Багате досвідом життя лежить переді мною, як рельєфна мапа моєї Республіки. Скільки-то води втекло з того дня, коли я, молодий, зелений юнак, окунувся</span>
+        </div>
+    </section>
+    <!--ІНФО В РЯД-->
+    <section class="info_row">
+        <div class="centre">
+            <div class="info_one">
+                <div class="col-1">
+                    <div class="sub_title">Послуги</div>
+                </div>
+                <div class="col-2">
+                    <span class="info_text">Короткий опис послуг теж до 300 символів. Зараз мені — за сімдесят, мене термосить іноді ломота, руки дрижать, і на очі набігає сльоза. Тоді  я наказую розтопити кану, кладу на підставку ноги і стежу вогники над деревом. Це такий архаїзм тепер — топити дровами, але не нарікайте  на мене — я згадую сво</span>
+                </div>
+            </div>
+            <div class="info_one">
+                <div class="col-1">
+                    <div class="sub_title">Продукція</div>
+                </div>
+                <div class="col-2">
+                    <span class="info_text">Короткий опис продукції. Дивлюся, як перебігає прекрасний вогник, символ вічного переходу енергії й розкладу матерії, простягаю до нього руки, і він гріє мої долоні, на яких лінія життя доходить уже до краю. Старість до чогось зобов'язує. Сьогодні я бачив нашу надзвичайну  «Білу Пустелю».</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ВІДЕО-->
+    <section class="video">
+        <div class="centre">
+            <span class="sub_title">Відео-перезентація нашої компанії</span>
+            <div class="video_box">
+                <div class="video_preload">
+                    <img src="./images/video-preload.png" alt="video preload">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#video"></use></svg>
+                </div>
+                <iframe style="display:none;" src="https://www.youtube.com/embed/pfWMx3V0TQI?list=RDGMEMJQXQAmqrnmK1SEjY_rKBGAVMpfWMx3V0TQI" title="Disturbed - Stricken (HQ Sound)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!--ІНФО В РЯД-->
+    <section class="info_row">
+        <div class="centre">
+            <div class="info_one">
+                <div class="col-1">
+                    <div class="sub_title">Географія  діяльності</div>
+                </div>
+                <div class="col-2">
+                    <span class="info_text">Опис країн та міст з якими працює компанія. Молодий кінорежисер із повагою потиснув мені руку й захоплено подивився в вічі. “Він не може висловити всієї радості з того факту, що бачить мене. Він радий, що бачить мене здоровим, і запрошує до себе в ательє. Він за моїми книжками вивчав кінематографію.</span>
+                </div>
+            </div>
+            <div class="info_one">
+                <div class="col-1">
+                    <div class="sub_title">Наші клієнти</div>
+                </div>
+                <div class="col-2">
+                    <span class="info_text">Опис або перелік клієнтів з якими працює компанія. Тепер я знову мав щастя побачити на екрані новий крок наперед. Кіномистецтво дійшло апогею. Якими смішними здались мені витвори його на зорі існування. Ми, пригадую, ніяк не могли погодити між собою питання: Мистецтво кіно чи ні.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ПЕРЕВАГИ-->
+    <section class="preference">
+        <div class="centre">
+            <span class="sub_title">Наші переваги</span>
+            <ul class="preference_grid">
+                <li>
+                    <figure>
+                        <div class="preference_img"><img src="./images/preference-1.png" alt="preference"></div>
+                        <figcaption>
+                            <b>Заголовок першої переваги може бути у дві строки</b>
+                            <span>Опис першої переваги може бути до ста символів. Тобто це муже бути два коротких речення або одне</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="preference_img"><img src="./images/preference-2.png" alt="preference"></div>
+                        <figcaption>
+                            <b>Заголовок другої переваги</b>
+                            <span>Опис другої переваги може бути до ста символів. Але не обов’язково</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <div class="preference_img"><img src="./images/preference-3.png" alt="preference"></div>
+                        <figcaption>
+                            <b>Заголовок третьої переваги може бути у дві строки</b>
+                            <span>Опис третьої переваги може бути до ста символів. Тобто це муже бути два коротких речення або одне</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--ГОЛОВНА СТАТТЯ-->
+    <section class="main_article">
+        <div class="centre">
+            <article>
+                <h1>Про нашу компанію</h1>
+                <p class="big_img"><img src="./images/main-article.png" alt="main article"></p>
+                <p>Детальня стаття про діяльність на 10 тисяч знаків. Виводиться декілька абзаців до 1,5 тисячи символів, а інший текст відкривається при кліку на кнопку «Читати більше».</p>
+                <p>Наші кроки в кіно були спробами дитини, що вчиться ходити. Батьки наші винайшли фотографію. Ми цю фотографію пристосували до фіксування руху. Віддрукувавши позитиви, ми рухали їх перед щілиною в картоні. Завдяки тому, що око має властивість затримувати в собі певну долю секунди все те, що воно бачить, — ми мали безпереміжний рух. Це був примітивний стробоскоп або ще з десяток назв, якими це приладдя називали різні винахідники. Платівки скляні поволі зійшли на нескляні. Апарат знімальний відповідно реконструювався, винайдено було плівку, і з'явилися перші метри величезного мистецтва, що його звемо тепер — Мас-Кіно-Мистецтво.</p>
+                <p>Вогники в кані стрибають і потріскують, вони пустують, як дітвора. Мені починає боліти серце. В цьому немає нічого дивного: повертаючи до молодих років, і сам стаєш ніби молодший, серце мусить більше працювати, а воно ж — стара калоша, моє серце. Гей, однолітки, чи й вам так болить часом серце? Та де! — Тих узяла могила, а решта замкнулася в баштах поважної старості.</p>
+            </article>
+            <a href="#" class="btn btn_reverse read_more">Читати більше</a>
+        </div>
+    </section>
+    <!--СЛАЙДЕР-->
+    <section class="main_slider">
+        <div class="slider_block">
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+            <div class="slide_one"><img src="./images/main-slider.jpg" alt="main slider"></div>
+        </div>
+    </section>
+    <!--МЕНЮ СІТКОЮ-->
+    <section class="grid_menu">
+        <ul class="centre">
+            <li><a href="#"><img src="./images/grid-menu-1.png"><span>Новини</span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-2.png"><span>Поширені запитання</span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-3.png"><span>Відгуки і рекомендації </span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-4.png"><span>Нагороди</span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-5.png"><span>Коротка історія</span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-6.png"><span>Вакансії</span></a></li>
+            <li><a href="#"><img src="./images/grid-menu-7.png"><span>Блог</span></a></li>
+        </ul>
+    </section>
+
+    <a href="#" class="to_up">up</a>
+</main>
+<!--ФУТЕР-->
+<footer class="site_footer">
+    <div class="centre">
+        <div class="col-1">
+            <a href="#" class="footer_logo"><img src="./images/logo.png"  width="90" height="45" alt="footer_logo"></a>
+            <ul class="footer-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <nav class="bottom_menu">
+                <ul>
+                    <li><a href="#">Про компанію</a></li>
+                    <li><a href="#">Поширені запитання</a></li>
+                    <li><a href="#">Коротка історія</a></li>
+                    <li><a href="#">Відгуки і рекомендації</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li><a href="#">Нагороди</a></li>
+                    <li><a href="#">Продукція</a></li>
+                    <li><a href="#">Вакансії</a></li>
+                    <li><a href="#">Ціни</a></li>
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </nav>
+            <div class="work_info">
+                <div class="info_item">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                    <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                </div>
+                <div class="info_item">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+                    <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                </div>
+                <a href="#" class="show_map">Показати на мапі</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <ul class="footer-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+            <a href="#" class="privacy">Політика конфіденційності</a>
+            <div class="copy">Створення сайту: <a href="https://websufix.com">SUFIX веб студія</a></div>
+        </div>
+    </div>
+</footer>
+
+<div class="styleguide" hidden>
+    <a href="#" class="btn">test test</a>
+
+    <a href="#" class="btn btn_reverse">test test</a>
+
+    <div class="input-wrap" data-title="Підказка до input при ховері">
+        <input type="text" placeholder="Підказка до input">
+    </div>
+
+    <div class="input-wrap" data-title="Підказка до input при ховері">
+        <textarea placeholder="Підказка до input"></textarea>
+    </div>
+
+    <article>
+
+        <h1>hello world1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa laboriosam molestias perferendis quasi voluptatem. Aspernatur consequuntur debitis dolorum ducimus ea, impedit maiores minus, nesciunt, officiis possimus sequi tempore voluptates? Aliquam corporis delectus fuga, impedit mollitia quam rem reprehenderit totam? Deleniti ducimus esse excepturi exercitationem minus necessitatibus pariatur vel.</p>
+        <h2>hello world1</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi excepturi incidunt sequi!</span>
+        <h3>hello world1</h3>
+        <ul>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ul>
+        <h4>hello world1</h4>
+        <ol>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ol>
+        <h5>hello world1</h5>
+        <a href="#"> Lorem ipsum dolor.</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quod sit suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+    </article>
+</div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/plugins/slick.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

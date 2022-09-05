@@ -12,3 +12,7 @@
 .info_one + .info_one {
     margin-top: 80px;
 }
+
+.info_one > .col-2 {
+    line-height: 1.6;
+}
