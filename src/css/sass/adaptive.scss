@@ -11,6 +11,8 @@
     /*ПЕРЕВАГИ*/
     /*ГОЛОВНА СТАТТЯ*/
     /*СЛАЙДЕР*/
+    /* НОВИНИ */
+    /*АКОРДІОН*/
 }
 
 @media only screen and (min-width : 640px)  {
@@ -30,6 +32,8 @@
     /*ПЕРЕВАГИ*/
     /*ГОЛОВНА СТАТТЯ*/
     /*СЛАЙДЕР*/
+    /* НОВИНИ */
+    /*АКОРДІОН*/
 }
 
 @media only screen and (min-width : 768px)  {
@@ -322,6 +326,8 @@
     .slider_block {
         height: 370px;
     }
+    /* НОВИНИ */
+    /*АКОРДІОН*/
 }
 
 @media only screen and (min-width : 1024px) {
@@ -331,6 +337,10 @@
 
     body {
         font-size: 20px;
+    }
+
+    .clickpath A {
+        font-size: 12px;
     }
 
     .main_title,
@@ -420,7 +430,85 @@
     /*МЕНЮ СІТКОЮ*/
     /*ПЕРЕВАГИ*/
     /*ГОЛОВНА СТАТТЯ*/
+    .main_article Time {
+        margin-bottom: 44px;
+    }
     /*СЛАЙДЕР*/
+    /* НОВИНИ */
+    .news_row Li {
+        padding: 40px 40px 80px 40px;
+    }
+
+    .news_row Li + Li {
+        margin-top: 40px;
+    }
+
+    .news_list-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .news_list Time {
+        font-size: 16px;
+        left: 40px;
+        bottom: 40px;
+    }
+
+    .news_list Time .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    .show_news {
+        font-size: 14px;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .pagination {
+        margin-top: 60px;
+        justify-content: center;
+    }
+
+    .pag_btn {
+        font-weight: 700;
+        height: 46px;
+        text-transform: uppercase;
+    }
+
+    .pagination Ul {
+        margin: 0 7px;
+    }
+
+    .pagination Li {
+        margin: 7px;
+    }
+
+    .pagination Li A,
+    .pagination Li b,
+    .pagination Li span {
+        font-size: 16px;
+        min-width: 46px;
+        height: 46px;
+    }
+    /*АКОРДІОН*/
+
+    .accordion_header {
+        padding: 30px 90px 30px 40px;
+        min-height: 90px;
+    }
+
+    .accordion_header::before,
+    .accordion_header::after {
+        top: 46px;
+        right: 30px;
+    }
+
+    .accordion_block Li + Li {
+        margin-top: 30px;
+    }
+
 }
 
 @media only screen and (min-width : 1280px) {
@@ -439,4 +527,6 @@
     .slider_block .slick-arrow.slick-next {
         right: calc(50% - 585px);
     }
+    /* НОВИНИ */
+    /*АКОРДІОН*/
 }

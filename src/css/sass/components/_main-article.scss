@@ -1,5 +1,6 @@
 /*ГОЛОВНА СТАТТЯ*/
 .main_article {
+    line-height: 1.6;
 }
 
 .main_article .centre {
@@ -16,4 +17,15 @@
 
 Article Img {
     max-width: 100%;
+}
+
+.main_article Time {
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main_article Time .icon {
+    fill: var(--text-light);
+    margin-right: 10px;
 }

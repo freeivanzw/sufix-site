@@ -1,0 +1,80 @@
+/*АКОРДІОН*/
+.accordion {
+    padding-bottom: var(--section-bottom);
+}
+
+.accordion .main_title {
+
+}
+
+.accordion_body {
+    display: none;
+}
+
+.accordion_block Li.active .accordion_body {
+    display: block;
+}
+
+.accordion_block Li {
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 40px 80px rgba(37, 35, 53, 0);
+    transition: 0.3s;
+}
+
+.accordion_block Li.active {
+    box-shadow: 0px 40px 80px rgba(37, 35, 53, 0.07);
+}
+
+.accordion_block Li + Li {
+    margin-top: 5px;
+}
+
+.accordion_header {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 15px 55px 20px 20px;
+    position: relative;
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+    min-height: 57px;
+    transition: 0.3s;
+}
+
+.accordion_header::before,
+.accordion_header::after {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    transition: 0.3s;
+}
+
+.accordion_header::after {
+    transform: rotate(90deg);
+}
+
+.accordion_block Li.active .accordion_header::before {
+    transform: rotate(45deg);
+    background-color: var(--main-color);
+}
+
+.accordion_block Li.active .accordion_header::after {
+    transform: rotate(135deg);
+    background-color: var(--main-color);
+}
+
+.accordion_header:hover::before,
+.accordion_header:hover::after {
+    background-color: var(--main-color);
+}
+
+.accordion_body {
+    padding: 15px 20px 15px 15px;
+}

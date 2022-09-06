@@ -73,7 +73,6 @@ gulp.task('serve', function () {
 		notify: false
     });
 
-
     gulp.watch("*.html").on("change", reload);
 	gulp.watch('src/css/sass/**/*.scss', gulp.parallel('sass-dev')).on("change", reload);
 	gulp.watch('src/*.html').on("change", reload) ;

@@ -59,4 +59,10 @@ $(function () {
         variableWidth: true,
         dots: true,
     });
+
+    $('.accordion_header').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).parent('li').toggleClass('active');
+    })
 })

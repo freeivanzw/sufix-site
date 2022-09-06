@@ -116,20 +116,31 @@ article a:hover {
     color: var(--link-color-active)
 }
 
-article li {
+article ul li {
     position: relative;
-    padding-left: 10px;
+    padding-left: 18px;
+    padding-bottom: 5px;
 }
 
-article li::before {
+article ul li::before {
     content: "";
-    width: 4px;
-    height: 4px;
-    background-color: var(--text-color);
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: var(--main-color);
     position: absolute;
     left: 0;
     top: 7px;
+    transform: rotate(-45deg);
+}
+
+article ol {
+    padding-left: 18px;
+    list-style: auto;
+}
+
+article ol li::marker {
+    font-weight: 700;
+    color: var(--main-color)
 }
 
 a:active {
