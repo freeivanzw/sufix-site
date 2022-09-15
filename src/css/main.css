@@ -83,7 +83,7 @@ select {
   position: relative;
   left: 0;
   top: 0;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,6 +130,88 @@ select {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.slick-initialized {
+  padding-bottom: 70px;
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots Li {
+  margin: 0 3px;
+}
+
+.slick-dots Button {
+  font-size: 0;
+  border: none;
+  display: block;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slick-dots Li.slick-active Button {
+  opacity: 1;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: -10px;
+  font-size: 0;
+  width: 30px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slick-arrow:hover {
+  opacity: 0.7;
+}
+
+.slick-arrow::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.slick-arrow::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.slick-arrow.slick-prev {
+  left: 15px;
+}
+
+.slick-arrow.slick-next {
+  right: 15px;
+  transform: rotate(180deg);
 }
 
 :root {
@@ -1136,94 +1218,12 @@ Article Img {
   overflow: hidden;
 }
 
-.slider_block.slick-initialized {
-  padding-bottom: 70px;
-}
-
 .slider_block.slick-initialized .slick-list {
   height: 100%;
 }
 
 .slider_block.slick-initialized .slick-track {
   height: 100%;
-}
-
-.slider_block .slick-dots {
-  display: flex;
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.slider_block .slick-dots Li {
-  margin: 0 3px;
-}
-
-.slider_block .slick-dots Button {
-  font-size: 0;
-  border: none;
-  display: block;
-  padding: 0;
-  width: 8px;
-  height: 8px;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  opacity: 0.3;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.slider_block .slick-dots Li.slick-active Button {
-  opacity: 1;
-}
-
-.slider_block .slick-arrow {
-  position: absolute;
-  bottom: -10px;
-  font-size: 0;
-  width: 30px;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.slider_block .slick-arrow:hover {
-  opacity: 0.7;
-}
-
-.slider_block .slick-arrow::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: var(--main-color);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.slider_block .slick-arrow::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-left: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.slider_block .slick-arrow.slick-prev {
-  left: 15px;
-}
-
-.slider_block .slick-arrow.slick-next {
-  right: 15px;
-  transform: rotate(180deg);
 }
 
 .slide_one {
@@ -1491,3 +1491,223 @@ Article Img {
 .accordion_body {
   padding: 15px 20px 15px 15px;
 }
+
+/*ВІДГУКИ І РЕКОМЕНДАЦІЇ*/
+.reviews_reference {
+  padding-bottom: var(--section-bottom);
+}
+
+.reviews_reference .main_title {
+  text-align: center;
+}
+
+.reviews_reference .item_title {
+  text-align: center;
+}
+
+.reviews_grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.reviews_grid li {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--sub-main-color);
+  padding: 20px 20px 20px 50px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.reviews_icon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.reviews_grid .box_title {
+  font-weight: 600;
+  display: block;
+  flex: 0 1 100%;
+  margin-bottom: 15px;
+}
+
+.reviews_counter {
+  flex: 0 1 50%;
+  margin-bottom: 25px;
+}
+
+.reviews_rating {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.reviews_rating .icon {
+  fill: #DBA507;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.reviews_rating span {
+  display: flex;
+  align-items: center;
+}
+
+.reviews_rating span b {
+  margin-right: 4px;
+}
+
+.learn_more-reviews {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--link-color-active);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.learn_more-reviews span {
+  border-bottom: 1px dashed var(--link-color);
+  transition: 0.3s;
+}
+
+.learn_more-reviews:hover span {
+  color: var(--link-color);
+}
+
+.learn_more-reviews .icon {
+  margin-left: 10px;
+}
+
+/*ВІДГУКИ*/
+.reviews {
+  padding-bottom: var(--section-bottom);
+}
+
+.reviews .sub_title {
+  text-align: center;
+}
+
+.reviews_slider:not(.slick-initialized) {
+  display: flex;
+  width: calc(100% + 20px);
+  overflow: hidden;
+  padding: 0 10px 75px 10px;
+  margin: 0 -10px -75px -10px;
+}
+
+.reviews_slider:not(.slick-initialized) .reviews_slide {
+  flex: 0 0 100%;
+}
+
+.reviews_slider.slick-initialized {
+  padding-bottom: 10px;
+}
+
+.reviews_slider .slick-list {
+  margin-bottom: -42px;
+}
+
+.reviews_slider .slick-track {
+  padding-bottom: 70px;
+}
+
+.reviews_slide {
+  padding: 20px 20px 25px 20px;
+  background-color: #fff;
+  box-shadow: 0px 10px 80px rgba(37, 35, 53, 0.07);
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.reviews_header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.reviews_header > .col-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.reviews_header > .col-1 b {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.reviews_header > .col-1 span {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.reviews_header > .col-2 {
+  display: flex;
+  align-items: center;
+}
+
+.reviews_slider-rating {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.reviews_slider-rating .icon {
+  width: 20px;
+  height: 20px;
+  filter: contrast(0);
+}
+
+.reviews_slider-rating .icon + .icon {
+  margin-left: 3px;
+}
+
+.reviews_slider-rating .icon.active {
+  filter: contrast(1);
+}
+
+.reviews_header > .col-2 time {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.reviews_text {
+  font-size: 14px;
+  line-height: 1.6;
+  display: block;
+  width: 100%;
+}
+
+.social_reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.social_reviews div,
+.social_reviews a {
+  font-size: 12px;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  margin: 0 15px 5px 0;
+}
+
+.social_reviews img {
+  display: block;
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+/*РЕКОМЕНДАЦІЇ*/

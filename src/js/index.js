@@ -65,4 +65,23 @@ $(function () {
 
         $(this).parent('li').toggleClass('active');
     })
+
+    $('.reviews_slider').slick({
+        infinite: false,
+        slidesToShow: 1.2,
+        dots: true,
+        arrows: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    centerMode: true,
+                    variableWidth: true,
+                }
+            }
+        ]
+    });
 })

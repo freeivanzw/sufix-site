@@ -1,0 +1,91 @@
+/*ВІДГУКИ І РЕКОМЕНДАЦІЇ*/
+.reviews_reference {
+    padding-bottom: var(--section-bottom);
+}
+
+.reviews_reference .main_title {
+    text-align: center;
+}
+
+.reviews_reference .item_title {
+    text-align: center;
+}
+
+.reviews_grid {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.reviews_grid li {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--sub-main-color);
+    padding: 20px 20px 20px 50px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.reviews_icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.reviews_grid .box_title {
+    font-weight: 600;
+    display: block;
+    flex: 0 1 100%;
+    margin-bottom: 15px;
+}
+
+.reviews_counter {
+    flex: 0 1 50%;
+    margin-bottom: 25px;
+}
+.reviews_rating {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.reviews_rating .icon {
+    fill: #DBA507;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.reviews_rating span{
+    display: flex;
+    align-items: center;
+}
+
+.reviews_rating span b {
+    margin-right: 4px;
+}
+
+.learn_more-reviews {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--link-color-active);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.learn_more-reviews span {
+    border-bottom: 1px dashed var(--link-color);
+    transition: 0.3s;
+}
+
+.learn_more-reviews:hover span {
+    color: var(--link-color);
+}
+
+.learn_more-reviews .icon {
+    margin-left: 10px;
+}
