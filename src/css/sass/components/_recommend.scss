@@ -1,0 +1,26 @@
+/*РЕКОМЕНДАЦІЇ*/
+
+.recommend {
+    padding-bottom: var(--section-bottom);
+}
+
+.recommend .sub_title {
+    text-align: center;
+}
+
+.recommend_slider:not(.slick-initialized) {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.recommend_slider:not(.slick-initialized) .recommend_slide {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+}
+
+.recommend_img {
+    width: 100%;
+
+}
