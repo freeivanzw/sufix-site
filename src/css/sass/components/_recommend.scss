@@ -20,7 +20,47 @@
     flex: 0 0 100%;
 }
 
+.recommend_slider.slick-initialized {
+    padding-bottom: 30px;
+}
+
+.recommend_slider .slick-track {
+    padding-bottom: 5px;
+}
+
+.recommend_slide {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
 .recommend_img {
     width: 100%;
+}
 
+.recommend_img Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.recommend_slide figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 25px 20px;
+}
+
+.recommend_slide .box_title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.recommend_slide .recommend_text {
+    font-size: 14px;
+    line-height: 1.7;
 }

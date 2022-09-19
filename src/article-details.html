@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+
+    <style>
+        :root {
+            --site-bg-color: #FFFFFF;
+            --header-bg-color: #F5F7FA;
+            --footer-bg: #EBEDF0;
+            --mob-menu-bg: #2C2A39;
+            --main-color: #D90A2C;
+            --sub-main-color: #EBEDF0;
+            --footer-color: #EBEDF0;
+            --btn-bg: #D90A2C;
+            --btn-text: #FFFFFF;
+            --btn-bg-reverse: #F5F7FA;
+            --btn-text-reverse: #D90A2C;
+            --text-color: #2C2A39;
+            --text-light: #868F9E;
+            --text-contrast: #ffffff;
+            --border-color: #CCCDCE;
+            --icon-color: #D90A2C;
+            --icon-color-active: #2C2A39;
+            --link-color: #D90A2C;
+            --link-color-active: #2C2A39;
+
+            --grid-menu-bg: #EBEDF0;
+        }
+    </style>
+</head>
+<body>
+<!--ХЕДЕР-->
+<header class="site_header">
+    <div class="centre">
+        <a href="#" class="header_logo"><img src="./images/logo.png" width="90" height="45" alt="header logo"></a>
+        <nav class="top_menu">
+            <ul>
+                <li><a href="#">Назва компанії</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li class="has_drop">
+                    <a href="#">Продукція</a>
+                    <ul>
+                        <li><a href="#">Назва компанії</a></li>
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Продукція</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Ціни</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="header_phones">
+            <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+
+        </ul>
+        <a href="#" class="mob_menu-open"><i></i>open mob menu</a>
+        <div class="mob_menu">
+            <a href="#" class="mob_menu-close close_btn">close mob menu</a>
+            <a href="#" class="mob_menu-logo"><img src="./images/logo.png"  width="90" height="45"  alt="header logo"></a>
+            <nav class="mob_top-menu">
+                <ul>
+                    <li><a href="#">Назва компанії</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li>
+                        <a href="#">Продукція</a>
+                        <ul>
+                            <li><a href="#">Назва компанії</a></li>
+                            <li><a href="#">Послуги</a></li>
+                            <li><a href="#">Продукція</a></li>
+                            <li><a href="#">Портфоліо</a></li>
+                            <li><a href="#">Ціни</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Портфоліо</a></li>
+                    <li><a href="#">Ціни</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="mob_menu-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="mob_menu-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="clickpath">
+        <div class="centre">
+            <div>
+                <a href="#"><span>Головна</span></a>
+            </div>
+            <div>
+                <a href="#"><span>Новини</span></a>
+            </div>
+            <div class="current">
+                <a href="#"><span>Назва новини</span></a>
+            </div>
+        </div>
+    </div>
+    <article class="article_details">
+        <div class="centre">
+            <h1>Нагороди</h1>
+            <p><img src="./images/article-details-1.jpg" width="570" height="700" style="margin: 30px; float: left" alt=""></p>
+            <b>Назва нагороди. Краща компанія 2022 року серед інших компаній по версії комітету оцінювання подібних компаній</b>
+            <p>Коротке пояснення про нагороду до 300 символів. Він не може висловити всієї радості з того факту, що бачить мене. Він радий, що бачить мене здоровим, і запрошує до себе в ательє. Він за моїми книжками вивчав кінематографію. Він перекаже товаришам по роботі, що велика людина ущасливить їх візитом</p>
+            <p><img src="./images/article-details-1.jpg" width="570" height="700" style="margin: 30px; float: right" alt=""></p>
+            <b>Назва нагороди. Краща компанія 2022 року серед інших компаній по версії комітету оцінювання подібних компаній</b>
+            <p>Коротке пояснення про нагороду до 300 символів. Він не може висловити всієї радості з того факту, що бачить мене. Він радий, що бачить мене здоровим, і запрошує до себе в ательє. Він за моїми книжками вивчав кінематографію. Він перекаже товаришам по роботі, що велика людина ущасливить їх візитом</p>
+        </div>
+    </article>
+    <a href="#" class="to_up">up</a>
+</main>
+<!--ФУТЕР-->
+<footer class="site_footer">
+    <div class="centre">
+        <div class="col-1">
+            <a href="#" class="footer_logo"><img src="./images/logo.png"  width="90" height="45" alt="footer_logo"></a>
+            <ul class="footer-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <nav class="bottom_menu">
+                <ul>
+                    <li><a href="#">Про компанію</a></li>
+                    <li><a href="#">Поширені запитання</a></li>
+                    <li><a href="#">Коротка історія</a></li>
+                    <li><a href="#">Відгуки і рекомендації</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li><a href="#">Нагороди</a></li>
+                    <li><a href="#">Продукція</a></li>
+                    <li><a href="#">Вакансії</a></li>
+                    <li><a href="#">Ціни</a></li>
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </nav>
+            <div class="work_info">
+                <div class="info_item">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                    <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                </div>
+                <div class="info_item">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+                    <span>
+                            ПН-ПТ з 10:00 до 18:00 <br>
+                            Вихідні субота та неділя
+                        </span>
+                </div>
+                <a href="#" class="show_map">Показати на мапі</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <ul class="footer-phone">
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+                <li><a href="tel:380985811614"><svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>380985811614</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#viber"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg></a></li>
+                <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#telegram"></use></svg></a></li>
+            </ul>
+            <a href="#" class="privacy">Політика конфіденційності</a>
+            <div class="copy">Створення сайту: <a href="https://websufix.com">SUFIX веб студія</a></div>
+        </div>
+    </div>
+</footer>
+
+<div class="styleguide" hidden>
+    <a href="#" class="btn">test test</a>
+
+    <a href="#" class="btn btn_reverse">test test</a>
+
+    <div class="input-wrap" data-title="Підказка до input при ховері">
+        <input type="text" placeholder="Підказка до input">
+    </div>
+
+    <div class="input-wrap" data-title="Підказка до input при ховері">
+        <textarea placeholder="Підказка до input"></textarea>
+    </div>
+
+    <article>
+
+        <h1>hello world1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad culpa laboriosam molestias perferendis quasi voluptatem. Aspernatur consequuntur debitis dolorum ducimus ea, impedit maiores minus, nesciunt, officiis possimus sequi tempore voluptates? Aliquam corporis delectus fuga, impedit mollitia quam rem reprehenderit totam? Deleniti ducimus esse excepturi exercitationem minus necessitatibus pariatur vel.</p>
+        <h2>hello world1</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi excepturi incidunt sequi!</span>
+        <h3>hello world1</h3>
+        <ul>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ul>
+        <h4>hello world1</h4>
+        <ol>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+            <li>test test test</li>
+        </ol>
+        <h5>hello world1</h5>
+        <a href="#"> Lorem ipsum dolor.</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quod sit suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magni sit velit?</p>
+    </article>
+</div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/plugins/slick.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

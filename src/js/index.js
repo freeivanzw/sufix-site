@@ -84,4 +84,23 @@ $(function () {
             }
         ]
     });
+
+    $('.recommend_slider').slick({
+        infinite: false,
+        slidesToShow: 1.2,
+        dots: true,
+        arrows: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                    centerMode: true,
+                    variableWidth: true,
+                }
+            }
+        ]
+    });
 })

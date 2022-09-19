@@ -100,7 +100,7 @@
 }
 
 .slick-initialized {
-        padding-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .slick-dots {
@@ -143,6 +143,7 @@
     background-color: transparent;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .slick-arrow:hover {

@@ -13,6 +13,20 @@
     margin-top: 80px;
 }
 
+.info_row.red_text .sub_title {
+    color: var(--main-color)
+}
+
 .info_one > .col-2 {
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_one > .col-2 > * + * {
+    margin-top: 15px;
+}
+
+.info_one > .col-2 b {
+    font-size: 18px;
 }
