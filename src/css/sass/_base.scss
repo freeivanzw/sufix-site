@@ -105,6 +105,10 @@ article > * {
     margin-bottom: 40px;
 }
 
+article b {
+    display: inline-block;
+}
+
 article a {
     color: var(--link-color);
     text-decoration: none;

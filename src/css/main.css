@@ -323,6 +323,10 @@ article > * {
   margin-bottom: 40px;
 }
 
+article b {
+  display: inline-block;
+}
+
 article a {
   color: var(--link-color);
   text-decoration: none;
@@ -1218,6 +1222,10 @@ Article Img {
   margin-right: 10px;
 }
 
+.article_btn {
+  margin-top: 50px;
+}
+
 /*СЛАЙДЕР*/
 .main_slider {
   padding-bottom: var(--section-bottom);
@@ -1256,6 +1264,10 @@ Article Img {
 /* НОВИНИ */
 .news_list {
   padding-bottom: var(--section-bottom);
+}
+
+.news_list .sub_title {
+  text-align: center;
 }
 
 .news_row Li {
